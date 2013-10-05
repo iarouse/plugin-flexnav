@@ -1,0 +1,17 @@
+extends layout.jade
+
+block demo-nav
+  .demos
+    a(href="index.html") Demo 1: Dark theme
+    a.active(href="index2.html") Demo 2: Light theme
+
+block script
+  script
+    (function($){
+      $('.flexnav').flexnav({
+        breakpoint: 767,
+        animationSpeed: 250, 
+        backLabel: 'Back', 
+        useActiveItemAsBackLabel: false
+      });
+    })(jQuery);
