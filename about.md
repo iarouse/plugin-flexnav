@@ -1,7 +1,8 @@
-
+## Name
+Flexnav - Responsive Multi-colors Slide nav/menu
 
 ## Features
-- Responsive **slide pattern** navigation, space-saving, sexy as hell.
+- Responsive **Slide pattern** navigation, space-saving, sexy as hell.
 - Build with **Less** CSS, easy to modify.
 - **Light** and **Dark** theme, plus **multiple colors** support (with 9 preset schemes).
 - Work well with **Bootstrap**, test on **2.3.2** and **3.0.0**

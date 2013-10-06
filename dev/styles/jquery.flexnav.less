@@ -85,7 +85,7 @@
 // text for flexnav, only show on mobile
 .fn-name {
 	position: absolute;
-	top: 14px;
+	top: 13px;
 	left: 22px;
 	font-size: 20px;
 	font-weight: 700;
@@ -370,11 +370,43 @@
 	}
 }
 
+// animation
+@-webkit-keyframes slide {
+	0% {
+		-webkit-transform: translateX(100%);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@-moz-keyframes slide {
+	0% {
+		-moz-transform: translateX(100%);
+		opacity: 0;
+	}
+	100% {
+		-moz-transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@keyframes slide {
+	0% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
 .fn-sm.fn-subview {
 	li,
-	li.fn-subviewopen > a,
+	li.fn-subviewopen > a, 			//
 	li.fn-subviewopen > .navicon,
-	li.fn-subview > a,
+	li.fn-subview > a, 				//
 	li.fn-subview > .navicon {
 		display: none;
 	}
@@ -383,10 +415,15 @@
 	li.fn-subview .sub-ul,
 	li.fn-subviewopen,
 	li.fn-subviewopen > .sub-ul,
+	li.fn-subviewopen > .sub-ul > li > a,
 	li.fn-subviewopen > .sub-ul > li {
 		display: block;
+		-webkit-animation: slide 0.25s ease-in-out;
+		-moz-animation: slide 0.25s ease-in-out;
+		animation: slide 0.25s ease-in-out;
 	}
 }
+
 
 /*==========  Share Theme Style  ==========*/
 .fn-light,

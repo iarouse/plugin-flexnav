@@ -1,4 +1,9 @@
-### Plugin info ###
+### 
+* flexnav plugin v1.0
+* http://iarouse.com/
+*
+* License info: http://codecanyon.net/licenses
+###
 ;((jquery, window) ->
 	'use strict'
 
