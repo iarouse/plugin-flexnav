@@ -11,7 +11,7 @@ Flexnav - Responsive Multi-colors Slide nav/menu
 - Cross broswer.
 
 ## Tags
-responsive menu, responsive navigation, muli
+responsive menu, responsive navigation, light and dark, mutli-color, less, bootstrap, Slide pattern, CoffeeScript, elegant, beautiful 
 
 ## Some thoughts
 Features:
