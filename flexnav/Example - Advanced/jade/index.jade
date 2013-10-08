@@ -1,0 +1,15 @@
+extends layout.jade
+
+block script
+  script
+    (function($){
+      $('.flexnav').flexnav({
+        breakpoint: 767,
+        animationSpeed: 250, 
+        backLabel: 'Back', 
+        useActiveItemAsBackLabel: true
+      });
+    })(jQuery);
+
+
+

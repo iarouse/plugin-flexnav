@@ -6,9 +6,9 @@
 	<title>Basic Example</title>
 
 	<!-- include the CSS and JS files -->
-	<link rel="stylesheet" href="flexmenu/css/jquery.flexmenu.css">
-	<script src="jquery-1.10.2.js"></script>
-	<script src="flexmenu/js/jquery.flexmenu.js"></script>
+	<link rel="stylesheet" href="css/jquery.flexnav.css">
+	<script src="js/vendor/jquery-1.10.2.js"></script>
+	<script src="js/jquery.flexnav.js"></script>
 	<!-- end include -->
 
 	<!-- basic style, not needed, just for demo -->
@@ -21,18 +21,24 @@
 </head>
 <body>
 	<!-- Menu container -->
-	<div class="fm-container">
+	<div class="fn-container fn-dark">
+
+		<!-- Mobile menu name -->
+		<div class="fn-name">
+			<span>Menu</span>
+		</div>
+		<!-- end Mobile menu name -->
 
 		<!-- Button -->
-		<div class="fm-button">
-			<span class="fm-bar"></span>
-			<span class="fm-bar"></span>
-			<span class="fm-bar"></span>
+		<div class="fn-button">
+			<span class="fn-bar"></span>
+			<span class="fn-bar"></span>
+			<span class="fn-bar"></span>
 		</div>
 		<!-- end button -->
 
 		<!-- Menu -->
-		<div class="menu">
+		<div class="flexnav">
 			<ul>
 				<li><a href="#">Item 1</a>
 					<ul>
@@ -52,9 +58,9 @@
 	<!-- end Menu container -->
 
 
-	<!-- init flexmenu -->
+	<!-- init plugin -->
 	<script>
-	$('.menu').flexMenu();
+	$('.flexnav').flexnav();
 	</script>
 </body>
 </html>

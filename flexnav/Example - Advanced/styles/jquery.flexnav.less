@@ -1,0 +1,477 @@
+/*==========  Color scheme  ==========*/
+
+// base
+@light: 			#EEF0F2;
+@dark: 				#34495e;
+
+// scheme
+@silver: 			#bdc3c7;
+
+@alizarin: 			#e74c3c;
+@pomegranate: 		#c0392b;
+
+@sun_flower: 		#f1c40f;
+@orange: 			#f39c12;
+
+@turquoise: 		#1abc9c;
+@green-sea: 		#16a085;
+
+@emerland: 			#2ecc71;
+@nephritis: 		#27ae60;
+
+@peter-river: 		#3498db;
+@belize-hole: 		#2980b9;
+
+@amethyst: 			#9b59b6;
+@wisteria: 			#8e44ad;
+
+@carrot: 			#e67e22;
+@pumpkin: 			#d35400;
+
+@concrete: 			#95a5a6;
+@asbestos: 			#7f8c8d;
+
+/*==========  Variables and Mixins  ==========*/
+
+@base: 				@dark; 			// options: @light, @dark
+@scheme: 			@peter-river; 	// options: @silver, @alizarin, @pomegranate...
+@inverse: 			#fff;
+@border_radius: 	4px;
+
+// mixins
+.transition (@time) {
+	-webkit-transition: all @time ease-in-out;
+	-moz-transition: all @time ease-in-out;
+	transition: all @time ease-in-out;
+}
+
+/*==========  Shared Style  ==========*/
+
+// flexnav container
+.fn-container {
+	position: relative;
+	box-sizing: border-box;
+	border-top: 1px solid darken(@base, 3%);
+	border-bottom: 1px solid darken(@base, 3%);
+	padding: 0 20px;
+	background: @base;
+
+	* {
+		box-sizing: border-box;
+	}
+}
+
+.fn-container-sm {
+	padding: 50px 0 0 0;
+
+	&.fn-container {
+		min-height: 51px;
+	}
+
+	.fn-name,
+	.fn-button {
+		display: block;
+	}
+}
+
+
+.fn-container-lg {
+	.fn-name,
+	.fn-button {
+		display: none;
+	}
+}
+
+// text for flexnav, only show on mobile
+.fn-name {
+	position: absolute;
+	top: 13px;
+	left: 22px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+// flexnav open/close button
+.fn-button {
+	position: absolute;
+	right: 22px;
+	top: 0px;
+	box-sizing: border-box;
+	margin: 2px 0 2px 20px ;
+	padding: 14px;
+	width: 52px;
+	border-radius: 3px;
+
+	&:hover {
+		cursor: pointer;
+		@include box-shadow( inset 0 0 8px rgba(0, 0, 0, .3) );
+	}
+
+	.fn-bar {
+		display: block;
+		width: 24px;
+		height: 3px;
+		border-radius: 1px;
+		background-color: #DFDFDF;
+	}
+
+	.fn-bar + .fn-bar {
+		margin-top: 4px;
+	}
+}
+
+// the nav
+.flexnav {
+	// clearfix
+	&:before,
+	&:after {
+		display: table;
+		content: " ";
+	}
+	&:after {
+		clear: both;
+	}
+
+	ul {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		position: relative;
+	}
+
+	a {
+		font-size: 16px;
+		font-weight: normal;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+/*==========  Desktop Style  ==========*/
+
+.fn-lg {
+	max-width: 1170px;
+  	margin: auto;
+
+	.navicon:after {
+		border: 4px solid transparent;
+		border-top-color: #666;
+		content: "";
+		position: absolute;
+		right: 6px;
+		top: 19px;
+	}
+
+	.fn-back {
+		display: none;
+	}
+
+	ul {
+		ul {
+			display: none;
+			z-index: 99;
+			position: absolute;
+			border-radius: @border_radius;
+
+			.navicon:after {
+				border: 4px solid transparent;
+				border-left-color: #666;
+				top: 15.5px;
+			}
+			
+			li {
+				padding: 3px;
+				min-width: 150px;
+
+				&:nth-child(2) {
+					border-top-left-radius: @border_radius;
+					border-top-right-radius: @border_radius;
+				}
+
+				&:last-child {
+					border-bottom-left-radius: @border_radius;
+					border-bottom-right-radius: @border_radius;
+				}
+
+				a {
+					padding: 6px 8px;
+					border-radius: @border_radius;
+				}
+			}
+		}
+	}
+
+	li {
+		a {
+			&:hover {
+				color: @scheme;
+			}
+		}
+
+		&.active > a,
+		&:hover > a {
+			background: @scheme;
+			color: @inverse;
+		}
+	}
+
+	// first level
+	> ul > li {
+		float: left;
+		position: relative;
+		white-space: nowrap;
+
+		a {
+			display: block;
+			padding: 10px 22px;
+		}
+
+		> a {
+			font-weight: 700;
+		}
+
+		&:first-child {
+			> a {
+				border-left: none;
+			}
+		}
+
+		&:hover > ul {
+			opacity: 1;
+			// display: block;
+			visibility: visible;
+			.transition(.25s);
+		}
+
+		// second level
+		> ul {
+			display: block;
+			left: 0;
+			top: 100%;
+			padding-top: 15px;
+			opacity: 0;
+			visibility: hidden;
+
+			&:after {
+				position: absolute;
+				left: 20px;
+				top: 1px;
+				content: "";
+				border: 8px solid transparent;
+				border-bottom: 8px solid @base;
+			}
+
+			li:hover > ul {
+				// display: block;
+				opacity: 1;
+				visibility: visible;
+				.transition(.25s);
+			}
+
+			// third, forth level etc.
+			ul {
+				display: block;
+				top: 0;
+				left: 100%;
+				padding-left: 15px;
+				opacity: 0;
+				visibility: hidden;
+
+				&:after {
+					position: absolute;
+					left: 1px;
+					top: 10px;
+					content: "";
+					border: 8px solid transparent;
+					border-right: 8px solid @base;
+				}
+			}
+		}
+	}
+
+}
+
+
+/*==========  Mobile Style  ==========*/
+.fn-sm {
+	display: none;
+
+
+	.navicon {
+		position: absolute;
+		top: 5px;
+		right: 2px;
+		height: 40px;
+		width: 50px;
+		border-left: 1px solid darken(@base, 10%);
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&:after {
+			position: absolute;
+			top: 12px;
+			right: 10px;
+			content: "";
+			border: 8px solid transparent;
+			border-left: 8px solid darken(@base, 10%);
+		}
+	}
+
+	.fn-back {
+		position: relative;
+		background: darken(@base, 5%);
+
+		&:before {
+			position: absolute;
+			top: 16px;
+			left: 18px;
+			content: "";
+			border: 8px solid transparent;
+			border-right: 8px solid darken(@base, 10%);
+		}
+
+		a {
+			display: block;
+			padding-left: 45px;
+		}
+	}
+
+	a {
+		display: block;
+		padding: 14px 22px;
+
+		&:hover {
+			background-color: @scheme;
+			color: @inverse;;
+		}
+	}
+
+	li:hover {
+		> .navicon {
+			border-left-color: darken(@scheme, 10%);
+
+			&:after {
+				border-left-color: darken(@scheme, 10%);
+			}
+		}
+	}
+
+	.sub-ul {
+		display: none;
+	}
+}
+
+// animation
+@-webkit-keyframes slide {
+	0% {
+		-webkit-transform: translateX(100%);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@-moz-keyframes slide {
+	0% {
+		-moz-transform: translateX(100%);
+		opacity: 0;
+	}
+	100% {
+		-moz-transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@keyframes slide {
+	0% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+.fn-sm.fn-subview {
+	li,
+	li.fn-subviewopen > a, 			//
+	li.fn-subviewopen > .navicon,
+	li.fn-subview > a, 				//
+	li.fn-subview > .navicon {
+		display: none;
+	}
+
+	li.fn-subview,
+	li.fn-subview .sub-ul,
+	li.fn-subviewopen,
+	li.fn-subviewopen > .sub-ul,
+	li.fn-subviewopen > .sub-ul > li > a,
+	li.fn-subviewopen > .sub-ul > li {
+		display: block;
+		-webkit-animation: slide 0.25s ease-in-out;
+		-moz-animation: slide 0.25s ease-in-out;
+		animation: slide 0.25s ease-in-out;
+	}
+}
+
+
+/*==========  Share Theme Style  ==========*/
+.fn-light,
+.fn-dark {
+	// flexnav button
+	.fn-button {
+
+		&:hover {
+			background-color: darken(@base, 10%);
+
+			.fn-bar {
+				background-color: @scheme;
+			}
+		}
+	}
+
+	ul ul li {
+		background: @base;
+	}
+
+}
+
+/*==========  Light Theme  ==========*/
+.fn-light {
+	color: mix(#fff, @dark, 15%);
+
+
+	a {
+		color: mix(#fff, @dark, 15%);
+	}
+
+	// flexnav button
+	.fn-bar {
+		background-color: @dark;
+	}	
+
+}
+
+/*==========  Dark Theme  ==========*/
+.fn-dark {
+	color: @inverse;
+
+	a {
+		color: @inverse;
+	}
+
+	// flexnav button
+	.fn-bar {
+		background-color: @inverse;
+	}
+}
