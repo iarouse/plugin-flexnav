@@ -1,4 +1,4 @@
-.fn-container{position:relative;box-sizing:border-box;border-top:1px solid #e5e8eb;border-bottom:1px solid #e5e8eb;padding:0 20px;background:#eef0f2;}.fn-container *,.fn-container *:before,.fn-container *:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.fn-container{position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border-top:1px solid #e5e8eb;border-bottom:1px solid #e5e8eb;padding:0 20px;background:#eef0f2;}.fn-container *,.fn-container *:before,.fn-container *:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 .fn-container-sm{padding:50px 0 0 0;}.fn-container-sm.fn-container{min-height:51px;}
 .fn-container-sm .fn-name,.fn-container-sm .fn-button{display:block;}
 .fn-container-lg .fn-name,.fn-container-lg .fn-button{display:none;}

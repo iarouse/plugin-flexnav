@@ -11,15 +11,6 @@
       "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 2048
     },
-    "\/js\/vendor\/bootstrap2\/css\/bootstrap.min.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/bootstrap2\/css\/bootstrap.min.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/js\/vendor\/bootstrap2\/js\/bootstrap.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -37,6 +28,15 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/vendor\/bootstrap2\/css\/bootstrap-responsive.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/js\/vendor\/bootstrap2\/css\/bootstrap.min.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/vendor\/bootstrap2\/css\/bootstrap.min.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
@@ -148,6 +148,17 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/js\/vendor\/bootstrap2\/img\/glyphicons-halflings-white.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/vendor\/bootstrap2\/img\/glyphicons-halflings-white.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/js\/vendor\/bootstrap2\/img\/glyphicons-halflings-white.png",
+      "initialSize" : 8777,
+      "fileType" : 8192
+    },
     "\/styles\/main.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -159,17 +170,6 @@
       "outputAbbreviatedPath" : "\/css\/main.css",
       "fileType" : 2,
       "debugStyle" : 1
-    },
-    "\/js\/vendor\/bootstrap2\/img\/glyphicons-halflings-white.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/bootstrap2\/img\/glyphicons-halflings-white.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/js\/vendor\/bootstrap2\/img\/glyphicons-halflings-white.png",
-      "initialSize" : 8777,
-      "fileType" : 8192
     },
     "\/basic.html" : {
       "ignoreWasSetByUser" : 0,
@@ -238,6 +238,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/js\/vendor\/bootstrap\/css\/bootstrap.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/vendor\/bootstrap\/css\/bootstrap.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/coffee\/jquery.flexnav.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -249,15 +258,6 @@
       "outputAbbreviatedPath" : "\/js\/jquery.flexnav.js",
       "outputStyle" : 0,
       "fileType" : 32
-    },
-    "\/js\/vendor\/bootstrap\/css\/bootstrap.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/bootstrap\/css\/bootstrap.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     }
   },
   "manualImportLinks" : [
