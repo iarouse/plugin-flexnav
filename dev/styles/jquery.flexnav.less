@@ -34,7 +34,7 @@
 /*==========  Variables and Mixins  ==========*/
 
 @base: 				@dark; 			// options: @light, @dark
-@scheme: 			@peter-river; 	// options: @silver, @alizarin, @pomegranate...
+@scheme: 			@peter-river; 	// options: @silver, @alizarin, @pomegranate, @green-sea...
 @inverse: 			#fff;
 @border_radius: 	4px;
 
@@ -56,7 +56,11 @@
 	padding: 0 20px;
 	background: @base;
 
-	* {
+	*,
+	*:before,
+	*:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 }
