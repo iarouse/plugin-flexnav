@@ -2,15 +2,6 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8300",
   "files" : {
-    "\/index2.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index2.html",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 2048
-    },
     "\/js\/vendor\/bootstrap2\/js\/bootstrap.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -30,6 +21,15 @@
       "inputAbbreviatedPath" : "\/js\/vendor\/bootstrap2\/css\/bootstrap-responsive.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/index2.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index2.html",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 2048
     },
     "\/js\/vendor\/bootstrap2\/css\/bootstrap.min.css" : {
       "ignoreWasSetByUser" : 0,
@@ -60,16 +60,16 @@
       "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
     },
-    "\/js\/vendor\/bootstrap\/js\/bootstrap.js" : {
+    "\/jade\/index2.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/bootstrap\/js\/bootstrap.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/vendor\/bootstrap\/js\/bootstrap-min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/jade\/index2.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 0,
+      "outputAbbreviatedPath" : "\/index2.html",
+      "fileType" : 512
     },
     "\/js\/vendor\/bootstrap2\/js\/bootstrap.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -82,25 +82,25 @@
       "outputAbbreviatedPath" : "\/js\/vendor\/bootstrap2\/js\/bootstrap.min-min.js",
       "fileType" : 64
     },
-    "\/css\/jquery.flexnav-light.css" : {
+    "\/css\/jquery.flexnav.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/jquery.flexnav-light.css",
-      "outputAbbreviatedPath" : "No Output Path",
+      "inputAbbreviatedPath" : "\/css\/jquery.flexnav.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
     },
-    "\/jade\/index2.jade" : {
+    "\/js\/vendor\/bootstrap\/js\/bootstrap.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/jade\/index2.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 0,
-      "outputAbbreviatedPath" : "\/index2.html",
-      "fileType" : 512
+      "inputAbbreviatedPath" : "\/js\/vendor\/bootstrap\/js\/bootstrap.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/vendor\/bootstrap\/js\/bootstrap-min.js",
+      "fileType" : 64
     },
     "\/js\/vendor\/bootstrap2\/css\/bootstrap-responsive.min.css" : {
       "ignoreWasSetByUser" : 0,
@@ -111,12 +111,12 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/css\/jquery.flexnav.css" : {
+    "\/css\/jquery.flexnav-light.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/jquery.flexnav.css",
+      "inputAbbreviatedPath" : "\/css\/jquery.flexnav-light.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
